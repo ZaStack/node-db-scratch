@@ -25,3 +25,6 @@
 
 11. `Build router`
 
+12. build `dbconfig.js`
+
+13. `touch .env`
