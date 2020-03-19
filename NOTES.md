@@ -28,3 +28,11 @@
 12. build `dbconfig.js`
 
 13. `touch .env`
+
+14. `create model`
+
+15. `knex migrate:make characters`
+
+16. `knex migrage:latest`
+
+17. `knex seed:make 00_characters`
