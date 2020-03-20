@@ -1,38 +1,33 @@
-1. `Create README`
-
+1. create README.md
 2. `git init`
-
 3. `npm init -y`
-
 4. `npx gitignore node`
-
-5. `git remote -v` 
-    `git remote add origin <URL>`
-    `knex init`
-
-6. `Dependencies: npm i -D nodemon` 
-    `npm i express knex sqlite3 helmet morgan cors dot env`
-
-7. `Scaffold basic structure`
-    `mkdir api auth database`
-    `touch index.js api/server.js auth/character-model.js auth/character-router.js`
-
-8. `Build index.js and server.js`
-
-9. `Confirm morgan is working in console.log and helmet is working in http client`
-
-10. `Confirm api is working`
-
-11. `Build router`
-
-12. build `dbconfig.js`
-
-13. `touch .env`
-
-14. `create model`
-
+5. after setting up COMPLETELY blank repo on Github a. `git remote -v` b.
+   `git remote add orgin <URL>` c. `git remote -v` d. `knex init` #1
+6. add dependencies  
+   a. `npm i express cors helmet morgan knex sqlite3` b. `npm i -D nodemon`
+7. scaffold basic structure a. `mkdir api auth database` b.
+   `touch index.js api/server.js auth/character-model.js auth/character-router.js`
+8. confirm helmet and morgan are working
+9. build `index.js and server.js`
+10. test api is working
+11. build server, character-router
+12. build `dbConfig.js`
+13. `touch .env` => PORT=5555
+14. create model
 15. `knex migrate:make characters`
-
-16. `knex migrage:latest`
-
+16. `knex migrate:latest`
 17. `knex seed:make 00_characters`
+18. `knex seed:run`
+19. build seed data
+20. view in http client
+
+#1
+
+```migrations: {
+      directory: './database/migrations'
+    },
+    seeds: {
+      directory: './database/seeds'
+    }
+```
